@@ -1,0 +1,53 @@
+.comment {
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .comment.reply-input {
+    margin-top: 10px;
+  }
+  
+  .depth-0 {
+    margin-left: 0;
+  }
+  
+  .depth-1 {
+    margin-left: 20px;
+  }
+  
+  .depth-2 {
+    margin-left: 40px;
+  }
+  
+  /* Add more depth classes for deeper indentation if needed */
+  
+
+  /* Add background colors for different depth levels */
+.comment.depth-0 {
+  background-color: #7ca9e4; /* Initial post background color */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.comment.depth-1 {
+  background-color: #dfc760; /* First-level comment background color */
+  padding: 10px;
+  margin: 10px 20px;
+}
+
+.comment.depth-2 {
+  background-color: #ee8025; /* Second-level comment background color */
+  padding: 10px;
+  margin: 10px 40px;
+}
+
+/* Add more depth classes for deeper comments if needed */
+
+.post {
+  background-color: #e47e71; /* Initial post background color */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Add more styling as needed */
