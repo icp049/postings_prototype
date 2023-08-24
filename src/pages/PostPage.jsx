@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './PostPage.css';
+import dp from '../img/dp.jpg';
+
 
 const PostPage = () => {
   const [postTitle, setPostTitle] = useState('');
@@ -8,7 +10,7 @@ const PostPage = () => {
   const [replyTexts, setReplyTexts] = useState([]);
   
   // Hardcoded user information
-  const hardcodedUser = { id: 1, username: '@ianpedeglorio', photo: 'user.jpg' };
+  const hardcodedUser = { id: 1, username: '@ianpedeglorio', photo: dp };
 
   const handleAddPost = () => {
     if (postTitle.trim() !== '' && postText.trim() !== '') {
