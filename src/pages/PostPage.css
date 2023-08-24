@@ -76,3 +76,22 @@
   border-radius: 50%; /* Makes the image circular */
   margin-right: 10px; /* Adds a small gap between the image and username */
 }
+
+
+/* Add this CSS to your PostPage.css stylesheet or your preferred stylesheet */
+
+/* Styling for the reply button */
+.comment .reply-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.comment .reply-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}

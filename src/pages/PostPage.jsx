@@ -47,7 +47,7 @@ const PostPage = () => {
             </div>
             <h2>{comment.title}</h2>
             <p>{comment.text}</p>
-            <button onClick={() => setReplyTexts([...replyTexts, { id: comment.id, text: '' }])}>Reply</button>
+            <button className="reply-button" onClick={() => setReplyTexts([...replyTexts, { id: comment.id, text: '' }])}>Reply</button>
             {replyTexts.some(reply => reply.id === comment.id) && (
               <div className="reply-input">
                 <input
