@@ -45,6 +45,14 @@
   border-radius: 40px;
 }
 
+
+.comment.depth-3 {
+  background-color: #df625e; /* Second-level comment background color */
+  padding: 10px;
+  margin: 10px 40px;
+  border-radius: 40px;
+}
+
 /* Add more depth classes for deeper comments if needed */
 
 .post {
