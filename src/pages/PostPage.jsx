@@ -9,7 +9,7 @@ const PostPage = () => {
   const [replyTexts, setReplyTexts] = useState([]);
 
   // Hardcoded user information
-  const hardcodedUser = { postAuthor: '@ianpedeglorio', commentAuthor: '@yvonnewang', photo: dp };
+  const hardcodedUser = { postAuthor: '@ianpedeglorio', commentAuthor1: '@yvonnewang', commentAuthor2: '@lopsiii', photo: dp };
 
   const handleAddPost = () => {
     if (postTitle.trim() !== '' && postText.trim() !== '') {
@@ -37,7 +37,13 @@ const PostPage = () => {
           <div key={comment.id} className={`comment depth-${depth}`}>
             <div className="user-info">
               <img src={hardcodedUser.photo} alt="User" />
-              <span>{comment.parentId === null ? hardcodedUser.postAuthor : hardcodedUser.commentAuthor}</span>
+              <span>
+                {comment.parentId === null
+                  ? hardcodedUser.postAuthor
+                  : comment.id % 2 === 0
+                  ? hardcodedUser.commentAuthor2
+                  : hardcodedUser.commentAuthor1}
+              </span>
             </div>
             <h2>{comment.title}</h2>
             <p>{comment.text}</p>
