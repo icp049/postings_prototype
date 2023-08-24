@@ -95,3 +95,35 @@
   background-color: #2980b9;
   transform: scale(1.05);
 }
+
+
+
+/* Styling for the reply input container */
+.comment .reply-input {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.comment .reply-input input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment .reply-input button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.comment .reply-input button:hover {
+  background-color: #219651;
+  transform: scale(1.05);
+}
